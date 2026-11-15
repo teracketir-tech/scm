@@ -324,3 +324,192 @@ tbody tr td.ant-table-cell { font-weight: 300 !important; }
 .modern-form-card .flex.items-center.justify-between:last-child {
   border-bottom: none !important;
 }
+
+/* =========================================================
+   Modern UI rollout for all dashboard pages
+   Keeps page logic intact and unifies legacy page components
+   with the visual language used in src/pages/users.
+   ========================================================= */
+.page-ui-modern {
+  color: #344054;
+}
+
+.dark .page-ui-modern {
+  color: #d0d5dd;
+}
+
+.page-ui-modern .ant-card,
+.page-ui-modern .modern-form-card {
+  border-radius: 1rem !important;
+}
+
+.page-ui-modern .ant-divider {
+  border-color: #eaecf0 !important;
+  margin: 20px 0 !important;
+}
+
+.dark .page-ui-modern .ant-divider {
+  border-color: #344054 !important;
+}
+
+.page-ui-modern .ant-collapse {
+  overflow: hidden;
+  border: 1px solid #eaecf0 !important;
+  border-radius: 1rem !important;
+  background: #fff !important;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, .04);
+}
+
+.dark .page-ui-modern .ant-collapse {
+  border-color: #344054 !important;
+  background: #111827 !important;
+}
+
+.page-ui-modern .ant-collapse > .ant-collapse-item {
+  border-bottom: 0 !important;
+}
+
+.page-ui-modern .ant-collapse .ant-collapse-header {
+  min-height: 56px;
+  align-items: center !important;
+  padding: 14px 20px !important;
+  color: #101828 !important;
+  font-weight: 700;
+}
+
+.dark .page-ui-modern .ant-collapse .ant-collapse-header {
+  color: #f2f4f7 !important;
+}
+
+.page-ui-modern .ant-collapse-content {
+  border-top: 1px solid #eaecf0 !important;
+  background: transparent !important;
+}
+
+.dark .page-ui-modern .ant-collapse-content {
+  border-top-color: #344054 !important;
+}
+
+.page-ui-modern .ant-collapse-content-box {
+  padding: 20px !important;
+}
+
+.page-ui-modern .ant-form-item-label > label {
+  color: #475467 !important;
+  font-weight: 600 !important;
+}
+
+.dark .page-ui-modern .ant-form-item-label > label {
+  color: #d0d5dd !important;
+}
+
+.page-ui-modern .ant-input,
+.page-ui-modern .ant-input-affix-wrapper,
+.page-ui-modern .ant-picker,
+.page-ui-modern .ant-input-number,
+.page-ui-modern .ant-select:not(.floating-select) .ant-select-selector,
+.page-ui-modern textarea.ant-input {
+  min-height: 40px;
+  border-radius: .65rem !important;
+}
+
+.page-ui-modern .ant-btn {
+  min-height: 38px;
+  border-radius: .65rem !important;
+  font-weight: 600;
+  transition: all .2s ease;
+}
+
+.page-ui-modern .ant-btn-primary {
+  box-shadow: 0 2px 5px rgba(70, 95, 255, .16) !important;
+}
+
+.page-ui-modern .ant-btn-default,
+.page-ui-modern .ant-btn:not(.ant-btn-primary):not(.ant-btn-link):not(.ant-btn-text) {
+  border-color: #d0d5dd;
+}
+
+.dark .page-ui-modern .ant-btn-default,
+.dark .page-ui-modern .ant-btn:not(.ant-btn-primary):not(.ant-btn-link):not(.ant-btn-text) {
+  border-color: #475467;
+  background: #1d2939;
+  color: #eaecf0;
+}
+
+.page-ui-modern .table-responsive,
+.page-ui-modern .ant-table-wrapper {
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
+.page-ui-modern .table-responsive {
+  overflow-x: auto;
+  border: 1px solid #eaecf0;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, .04);
+}
+
+.dark .page-ui-modern .table-responsive {
+  border-color: #344054;
+  background: #111827;
+}
+
+.page-ui-modern .ant-table-wrapper .ant-table-container {
+  border-radius: 1rem !important;
+}
+
+.page-ui-modern .ant-table-thead > tr > th:first-child {
+  border-start-start-radius: .75rem;
+}
+
+.page-ui-modern .ant-table-thead > tr > th:last-child {
+  border-start-end-radius: .75rem;
+}
+
+.page-ui-modern .ant-table-pagination {
+  margin: 16px 20px !important;
+}
+
+.page-ui-modern .action-buttons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.page-ui-modern .ant-tag {
+  border-radius: 999px;
+  padding-inline: 10px;
+}
+
+.page-ui-modern .ant-alert {
+  border-radius: .85rem;
+}
+
+.page-ui-modern .ant-modal-content,
+.page-ui-modern .ant-drawer-content {
+  border-radius: 1rem;
+}
+
+.page-ui-modern .ant-upload-wrapper .ant-upload-drag {
+  border-radius: .85rem;
+}
+
+.page-ui-modern .ant-empty {
+  padding: 24px 0;
+}
+
+@media (max-width: 768px) {
+  .page-ui-modern .ant-collapse-content-box {
+    padding: 14px !important;
+  }
+
+  .page-ui-modern .ant-table-pagination {
+    margin: 12px !important;
+  }
+
+  .page-ui-modern .ant-btn {
+    max-width: 100%;
+  }
+}
