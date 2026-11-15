@@ -1,0 +1,2191 @@
+.my-80 {
+  margin: 80px 0;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.my-100 {
+  margin: 100px 0;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.gap-2 {
+  gap: 2px;
+}
+
+.gap-4 {
+  gap: 4px;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.AZ-img-container {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+.AZ-img-container::after {
+  content: "";
+  display: block;
+}
+.AZ-img-container .AZ-img-container-inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.AZ-img-cover img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.AZ-styled-select {
+  width: 100%;
+  min-height: 48px;
+  border-radius: 10px;
+  border: 1px solid #E3E1E1;
+  background: #FFF;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+.AZ-styled-select::before {
+  content: "\e91b";
+  font-family: "icomoon";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  font-size: 20px;
+  color: #C4CDD5;
+}
+.AZ-styled-select select {
+  font-size: 14px;
+  padding: 0 10px;
+  border: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: transparent;
+  font-family: "Peyda-Regular";
+  height: 100%;
+  width: 100%;
+  color: #BBBBBB;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+
+.AZ-primary-btn,
+.AZ-secondary-btn {
+  font-size: 14px;
+  color: #fff;
+  font-family: "Peyda-Regular";
+  height: 35px;
+  padding: 8px 16px 10px 16px;
+  border: 0;
+  transition: all 0.2s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  border-radius: 8px;
+  background: rgb(245, 130, 34);
+}
+.AZ-primary-btn:hover,
+.AZ-secondary-btn:hover {
+  color: #fff;
+}
+.AZ-secondary-btn {
+  font-size: 14px;
+  background: transparent;
+  color: rgb(245, 130, 34);
+  border-radius: 8px;
+  border: 1px solid rgb(245, 130, 34);
+  padding: 8px 16px;
+}
+.AZ-secondary-btn:hover {
+  background: rgb(245, 130, 34);
+  color: #fff;
+}
+
+.AZ-field-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.AZ-field-group label {
+  font-size: 14px;
+  color: #000;
+  font-family: "Peyda-Medium";
+  margin-bottom: 8px;
+}
+.AZ-field-group label span {
+  font-size: 12px;
+  color: #EF4D4D;
+}
+.AZ-field-group input, .AZ-field-group textarea {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8705882353);
+  font-family: "Peyda-Regular";
+  border-radius: 8px;
+  padding: 10px 20px;
+  border: 1px solid rgba(137, 134, 134, 0.24);
+  background: #fff;
+  flex-grow: 1;
+}
+.AZ-field-group input:focus, .AZ-field-group textarea:focus {
+  box-shadow: 0 0 10px rgba(96, 96, 96, 0.1);
+  background: #f5f5f5;
+}
+.AZ-field-group input {
+  height: 45px;
+}
+
+.navbar-wrapper {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 1;
+}
+.navbar-wrapper .nav-link {
+  font-size: 14px;
+  color: #004B90;
+  font-family: "Peyda-Medium";
+  transition: all 0.2s linear;
+  position: relative;
+}
+.navbar-wrapper .nav-link:hover {
+  color: #de700f;
+}
+.navbar-wrapper .nav-link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  border-radius: 5px;
+  background: rgb(204, 204, 204);
+  height: 12px;
+}
+.navbar-wrapper .nav-link:first-child::after {
+  content: none;
+}
+
+.AZ-checkbox-group {
+  margin-bottom: 15px;
+}
+.AZ-checkbox-group input {
+  display: none;
+}
+.AZ-checkbox-group label {
+  font-size: 14px;
+  color: #000000;
+  padding: 0 25px 0;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.AZ-checkbox-group label::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(245, 130, 34);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 13px;
+  padding-top: 3px;
+  transition: all 0.2s linear;
+}
+.AZ-checkbox-group input:checked ~ label::after {
+  content: "\2714";
+  background: rgb(245, 130, 34);
+  border: 1px solid rgb(245, 130, 34);
+}
+
+#accordian {
+  width: 100%;
+  flex-grow: 2;
+  padding-top: 20px;
+}
+#accordian ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+#accordian ul li {
+  padding: 3px 0;
+}
+#accordian ul li p {
+  transition: all 0.2s linear;
+}
+#accordian ul li a {
+  font-size: 14px;
+  color: #E5E5E5;
+  font-family: "Peyda-Regular";
+  padding: 8px 12px;
+  transition: all 0.3s;
+  position: relative;
+  border-radius: 3px;
+  display: inline-block;
+  transition: all 0.2s linear;
+  width: 100%;
+  white-space: nowrap;
+  border-radius: 10px;
+}
+#accordian ul li a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 0;
+  width: 2px;
+  border-radius: 10px;
+  background: rgb(245, 130, 34);
+  transition: all 0.2s linear;
+}
+#accordian ul li a.active, #accordian ul li a:hover {
+  background: rgba(45, 71, 134, 0.3);
+  color: rgb(245, 130, 34);
+}
+#accordian ul li a.active::after {
+  height: 20px;
+}
+#accordian ul li a span {
+  font-size: 18px;
+}
+
+#accordian > ul.show-dropdown > li.active > a,
+#accordian > ul > li > ul.show-dropdown > li.active > a,
+#accordian > ul > li > ul > li > ul.show-dropdown > li.active > a,
+#accordian > ul > li > ul > li > ul > li > ul.show-dropdown > li.active > a,
+#accordian > ul > li > ul > li > ul > li > ul > li > ul.show-dropdown > li.active > a {
+  width: 100%;
+}
+
+#accordian > ul > li > ul,
+#accordian > ul > li > ul > li > ul,
+#accordian > ul > li > ul > li > ul > li > ul,
+#accordian > ul > li > ul > li > ul > li > ul > li > ul {
+  display: none;
+  position: relative;
+  padding-right: 10px;
+}
+
+#accordian > ul > li.active > ul.show-dropdown,
+#accordian > ul > li > ul > li.active > ul.show-dropdown,
+#accordian > ul > li > ul > li > ul > li.active > ul.show-dropdown,
+#accordian > ul > li > ul > li > ul > li > ul > li.active > ul.show-dropdown {
+  display: block;
+}
+
+#accordian > ul > li > ul,
+#accordian > ul > li > ul > li > ul,
+#accordian > ul > li > ul > li > ul > li > ul,
+#accordian > ul > li > ul > li > ul > li > ul > li > ul {
+  padding-left: 0;
+}
+
+#accordian li a:not(:only-child) {
+  position: relative;
+}
+#accordian li a:not(:only-child)::after {
+  content: "\e912";
+  position: absolute;
+  left: 15px;
+  top: 14px;
+  font-size: 15px;
+  font-family: "icomoon";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  transition: 0.2s;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+#accordian .active > a:not(:only-child):after {
+  transform: rotate(180deg);
+}
+
+.navbar {
+  overflow: hidden;
+}
+.navbar .navbar-toggler {
+  font-size: 25px;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none !important;
+}
+.navbar .offcanvas-start {
+  width: 300px;
+}
+.navbar .offcanvas-start .nav-link {
+  padding: 15px !important;
+}
+.navbar .offcanvas-start .nav-link::after {
+  bottom: 0;
+  height: 1px;
+}
+.navbar .offcanvas-start .secondary-btn {
+  margin-right: 0;
+}
+.navbar .offcanvas-start .primary-btn {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.navbar .offcanvas-start .secondary-btn {
+  width: 100%;
+}
+.navbar .nav-link {
+  font-size: 12px;
+  color: #000000;
+  font-family: "Peyda-Medium";
+  position: relative;
+  padding: 30px 15px !important;
+}
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #079992;
+  transition: all 0.2s linear;
+}
+.navbar .nav-link:hover::after {
+  bottom: 5px;
+}
+.navbar .secondary-btn {
+  margin-right: 15px;
+}
+.navbar .navbar-brand img {
+  width: 110px;
+}
+
+.modal-wrapper .modal-header {
+  padding: 0 0 20px 0;
+}
+.modal-wrapper .primary-btn,
+.modal-wrapper .secondary-btn,
+.modal-wrapper .danger-btn {
+  font-size: 15px;
+  padding: 5px 20px;
+}
+.modal-wrapper .modal-content {
+  box-shadow: 0 0 29px rgba(87, 119, 117, 0.5);
+  border: 0;
+  border-radius: 8px;
+  padding: 30px;
+}
+.modal-wrapper .modal-title {
+  font-size: 18px;
+  color: #101010;
+  font-family: "Peyda-Bold";
+  margin-bottom: 30px;
+}
+.modal-wrapper .modal-text {
+  font-size: 14px;
+  color: #101010;
+  font-family: "Peyda-Bold";
+  margin-bottom: 10px;
+}
+
+.danger-message {
+  padding: 10px;
+  border: 1px solid #E55454;
+  background: rgb(249, 219, 219);
+  border-radius: 10px;
+}
+.danger-message p {
+  font-size: 14px;
+  color: rgb(110, 0, 0);
+  font-family: "Peyda-Regular";
+}
+
+.pr-260 {
+  padding-right: 260px;
+  transition: all 0.2s linear;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.AZ-section-desc {
+  font-size: 13px;
+  color: #808080;
+  font-family: "Peyda-Regular";
+}
+
+.AZ-content-page {
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  flex-grow: 1;
+  padding-top: 16px;
+}
+.AZ-content-page .link-box {
+  font-size: 14px;
+  color: #171717;
+  font-family: "Peyda-Regular";
+}
+.AZ-content-page .link-box span {
+  height: 54px;
+  width: 54px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  font-size: 30px;
+  color: rgb(245, 130, 34);
+}
+.AZ-content-page .cardsSwiper {
+  overflow: unset;
+}
+.AZ-content-page .dahboard-box {
+  border-radius: 20px;
+  background: #002349;
+  position: relative;
+}
+.AZ-content-page .dahboard-box-inner {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+.AZ-content-page .dahboard-box::after, .AZ-content-page .dahboard-box::before {
+  content: "";
+  background: #284486;
+  filter: blur(30px);
+  position: absolute;
+  right: 29px;
+  bottom: 14px;
+  width: 92px;
+  height: 90px;
+}
+.AZ-content-page .dahboard-box::before {
+  right: unset;
+  bottom: unset;
+  top: 9px;
+  left: 0;
+  width: 122px;
+  height: 119px;
+}
+.AZ-content-page .dahboard-box .box-num {
+  font-size: 20px;
+  color: #FFFFFF;
+  font-family: "Peyda-Medium";
+}
+.AZ-content-page .dahboard-box .box-title {
+  font-size: 16px;
+  color: #CCCCCC;
+  font-family: "Peyda-Regular";
+}
+.AZ-content-page .dahboard-box .box-link {
+  font-size: 14px;
+  color: #FFFFFF;
+  font-family: "Peyda-Regular";
+  border-radius: 8px;
+  border: 1px solid #2D4786;
+  padding: 8px 16px 10px 16px;
+  flex-grow: 1;
+  transition: all 0.2s linear;
+}
+.AZ-content-page .dahboard-box .box-link:hover {
+  background: #2D4786;
+  color: #fff;
+}
+.AZ-content-page .dahboard-box .box-icon span {
+  font-size: 42px;
+  color: #fff;
+}
+.AZ-content-page .dahboard-box.gold-box {
+  background: #DDAA2D;
+}
+.AZ-content-page .dahboard-box.gold-box::after, .AZ-content-page .dahboard-box.gold-box::before {
+  background: #F8D57F;
+  filter: blur(40px);
+}
+.AZ-content-page .dahboard-box.gold-box .box-link {
+  border: 1px solid #F8D57F;
+}
+.AZ-content-page .dahboard-box.gold-box .box-link:hover {
+  background: #F8D57F;
+  color: #fff;
+}
+.AZ-content-page .dahboard-box.gold-box .box-title {
+  color: #EBF4FF;
+}
+.AZ-content-page .dahboard-box.gray-box {
+  background: #8E8E8E;
+}
+.AZ-content-page .dahboard-box.gray-box::after, .AZ-content-page .dahboard-box.gray-box::before {
+  background: #CDCDCD;
+  filter: blur(40px);
+}
+.AZ-content-page .dahboard-box.gray-box .box-link {
+  border: 1px solid #CDCDCD;
+}
+.AZ-content-page .dahboard-box.gray-box .box-link:hover {
+  background: #CDCDCD;
+  color: #fff;
+}
+.AZ-content-page .dahboard-box.gray-box .box-title {
+  color: #EBF4FF;
+}
+.AZ-content-page .list-message {
+  margin-right: 20px;
+}
+.AZ-content-page .list-message li {
+  list-style-type: disc;
+}
+.AZ-content-page .notif-message {
+  font-size: 16px;
+  font-family: "Peyda-Medium";
+  color: #002349;
+}
+.AZ-content-page .content-page-main {
+  padding: 0 16px 16px 16px;
+}
+.AZ-content-page .inventory-box,
+.AZ-content-page .buy-box,
+.AZ-content-page .sell-box {
+  padding: 15px;
+  border-radius: 15px;
+  background: linear-gradient(90deg, #6484D2 0%, #2D4786 100%);
+}
+.AZ-content-page .inventory-box .price,
+.AZ-content-page .buy-box .price,
+.AZ-content-page .sell-box .price {
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Peyda-Regular";
+}
+.AZ-content-page .inventory-box .AZ-section-text,
+.AZ-content-page .buy-box .AZ-section-text,
+.AZ-content-page .sell-box .AZ-section-text {
+  color: #ECC7C7;
+}
+.AZ-content-page .buy-box {
+  background: linear-gradient(90deg, #73F4BB 0%, #36CE8B 100%);
+}
+.AZ-content-page .buy-box .price {
+  font-size: 16px;
+}
+.AZ-content-page .buy-box .AZ-section-text {
+  color: #fff;
+}
+.AZ-content-page .sell-box {
+  background: linear-gradient(90deg, #FFC0C2 0%, #FF6467 100%);
+}
+.AZ-content-page .sell-box .price {
+  font-size: 16px;
+}
+.AZ-content-page .sell-box .AZ-section-text {
+  color: #fff;
+}
+.AZ-content-page .info-text {
+  font-size: 10px;
+  color: #808080;
+  font-family: "Peyda-Regular";
+  margin-top: 10px;
+}
+.AZ-content-page .info-text span {
+  font-size: 16px;
+  color: #DBB948;
+}
+
+.increase-inventory {
+  font-size: 12px;
+  color: #DBB948;
+  font-family: "Peyda-Regular";
+  border-radius: 8px;
+  background: rgba(250, 250, 250, 0);
+  transition: all 0.2s linear;
+  padding: 6px 12px 8px 12px;
+}
+.increase-inventory:hover {
+  color: #000;
+}
+
+.offcanvas-start {
+  width: 300px;
+}
+
+.AZ-header-page {
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-radius: 0;
+  padding: 12px;
+  margin-bottom: 0 !important;
+  background: #f4f5f8;
+}
+.AZ-header-page .header-text {
+  font-size: 14px;
+  color: #808080;
+  font-family: "Peyda-Regular";
+}
+.AZ-header-page .header-text span {
+  color: #171717;
+}
+.AZ-header-page .notification {
+  font-size: 22px;
+  color: #AB9EA1;
+}
+.AZ-header-page .badge1 {
+  top: 5px;
+  right: 5px;
+  background: #002349;
+}
+.AZ-header-page .profile-img {
+  width: 48px;
+  border-radius: 50%;
+}
+.AZ-header-page .profile-img::after {
+  padding-bottom: 100%;
+}
+.AZ-header-page .hamberger-menu {
+  font-size: 25px;
+  margin-left: 15px;
+}
+.AZ-header-page .profile-name {
+  font-size: 14px;
+  color: #292F45;
+  font-family: "Peyda-Bold";
+  margin-bottom: -5px;
+}
+.AZ-header-page .dropdown-profile .dropdown-btn span {
+  font-size: 20px;
+  color: #AB9EA1;
+}
+.AZ-header-page .dropdown .icon-arrow-down-1 {
+  position: relative;
+  margin-right: 10px;
+  font-size: 20px;
+  color: #000;
+  top: 0;
+}
+.AZ-header-page .dropdown .dropdown-menu.show {
+  border-radius: 8px;
+  background: rgb(245, 130, 34);
+  border: 0;
+}
+.AZ-header-page .dropdown .dropdown-item {
+  font-size: 14px;
+  color: #FFFFFF;
+  font-family: "Peyda-Regular";
+  padding: 10px;
+  transition: all 0.2s linear;
+}
+.AZ-header-page .dropdown .dropdown-item span {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.AZ-header-page .dropdown .dropdown-item:hover {
+  background: #F8D57F;
+}
+.AZ-header-page .dropdown .dropdown-menu_notif.show {
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 0px 24px 0px rgba(57, 66, 96, 0.2);
+  border: 0;
+}
+.AZ-header-page .dropdown .dropdown-menu_notif.show .dropdown-item {
+  color: #000;
+}
+.AZ-header-page .dropdown .dropdown-menu_notif.show .dropdown-item span {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.AZ-header-page .dropdown .dropdown-menu_notif.show .dropdown-item:hover {
+  background: #D6D6D6;
+}
+.AZ-header-page .dropdown .dropdown-menu_notif.show li {
+  border-bottom: 1px solid rgb(209, 209, 209);
+}
+.AZ-header-page .dropdown .dropdown-menu_notif.show li:last-child {
+  border-bottom: 0;
+}
+.AZ-header-page .dropdown .dropdown-menu_notif.show .view-all {
+  color: #000000;
+}
+.AZ-header-page .dropdown .dropdown-menu_notif.show .approw span {
+  color: #079992;
+  background: #e2fffe;
+}
+.AZ-header-page .dropdown .dropdown-menu_notif.show .reject span {
+  color: #E55454;
+  background: #fde9e9;
+}
+
+.tabs {
+  gap: 12px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  border-radius: 30px;
+  background: #EBF4FF;
+  padding: 4px;
+  gap: 4px;
+}
+.tabs li {
+  padding: 6px 30px;
+  position: relative;
+  position: relative;
+  min-width: unset;
+  transition: all 0.2s linear;
+  flex-grow: 1;
+  background: transparent;
+  border-radius: 40px;
+  border: 1px solid #EBF4FF;
+}
+.tabs li .tab-link {
+  font-size: 14px;
+  color: #737373;
+  font-family: "Peyda-Regular";
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s linear;
+}
+.tabs li:hover .tab-link {
+  color: rgb(245, 130, 34);
+}
+.tabs li.active {
+  border: 1px solid rgb(245, 130, 34);
+}
+.tabs li.active .tab-link {
+  color: rgb(245, 130, 34);
+}
+
+.box-table {
+  border-radius: 25px;
+  background: #FFF;
+  padding: 20px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+}
+.table thead tr {
+  position: relative;
+}
+.table thead tr::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: #F5F5F5;
+}
+.table thead th {
+  font-size: 12px;
+  color: #262626;
+  font-family: "Peyda-Regular";
+  padding: 10px;
+  white-space: nowrap;
+  position: relative;
+  z-index: 1;
+}
+.table td,
+.table th {
+  border: none;
+  text-align: right;
+  vertical-align: middle;
+}
+.table tbody {
+  border-radius: 10px;
+}
+.table tbody tr {
+  border-bottom: 1px solid #FFE7E7;
+}
+.table tbody tr:last-child {
+  border-bottom: 0;
+}
+.table tbody td {
+  padding: 15px;
+}
+.table tbody td p, .table tbody td span {
+  font-size: 12px;
+  color: #737373;
+  font-family: "Peyda-Regular";
+}
+.table .view-btn {
+  font-size: 14px;
+  color: #DBB948;
+  font-family: "Peyda-Regular";
+  transition: all 0.2s linear;
+}
+.table .view-btn:hover {
+  color: #000;
+}
+.table .status {
+  font-size: 14px;
+  font-family: "Peyda-Regular";
+  color: #737373;
+}
+
+.AZ-pagination {
+  gap: 6px;
+}
+.AZ-pagination .page-link {
+  font-size: 14px;
+  color: #808080;
+  font-family: "Peyda-Bold";
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid #FFF;
+  background: #fff;
+  transition: all 0.2s linear;
+}
+.AZ-pagination .page-link:hover, .AZ-pagination .page-link.active {
+  color: rgb(245, 130, 34);
+  border: 1px solid rgb(245, 130, 34);
+}
+
+.sidebar-logo {
+  width: 150px;
+}
+
+.site-name {
+  font-size: 16px;
+  color: #fff;
+  font-family: "Peyda-Medium";
+  white-space: nowrap;
+}
+
+.sidebar-favicon {
+  width: 80px;
+}
+
+.AZ-section-title {
+  font-size: 18px;
+  color: #002349;
+  font-family: "Peyda-Medium";
+  margin-bottom: 15px;
+}
+
+.AZ-section-text {
+  font-size: 14px;
+  font-family: "Peyda-Regular";
+  color: #808080;
+  text-align: justify;
+}
+
+.AZ-box {
+  border-radius: 25px;
+  background: #FFF;
+  padding: 20px;
+}
+
+.share-title {
+  font-size: 12px;
+  color: #171717;
+  font-family: "Peyda-Regular";
+}
+
+.share-link {
+  border-radius: 12px;
+  background: #EBF4FF;
+  padding: 6px 20px;
+  height: 45px;
+}
+.share-link #link {
+  font-size: 14px;
+  font-family: "Peyda-Regular";
+  color: #808080;
+  flex-grow: 2;
+  border: none;
+  height: 100%;
+  text-align: center;
+  height: 100%;
+  background: transparent;
+  border: 0;
+}
+.share-link #copy span {
+  color: #808080;
+}
+.share-link #copy button {
+  font-size: 19px;
+  color: #808080;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+.share-link #copy button.copied::after {
+  content: "با موفقیت کپی شد";
+  position: absolute;
+  top: 0px;
+  left: 35px;
+  height: 30px;
+  display: block;
+  white-space: nowrap;
+  padding: 5px 10px 0;
+  font-size: 12px;
+  font-family: "Peyda-Regular";
+  color: #fff;
+  background-color: rgb(245, 130, 34);
+  opacity: 1;
+  will-change: opacity, transform;
+  animation: showcopied 1.5s ease;
+  border-radius: 4px;
+}
+
+@keyframes showcopied {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.AZ-activity-summary {
+  border-radius: 15px;
+  background: #EBF4FF;
+  padding: 15px;
+}
+.AZ-activity-summary li {
+  font-size: 14px;
+  color: #808080;
+  font-family: "Peyda-Regular";
+  border-bottom: 1px solid #fff;
+  padding: 11px 0;
+}
+.AZ-activity-summary li:last-child {
+  border-bottom: 0;
+}
+
+.AZ-rewards-box {
+  gap: 10px;
+}
+.AZ-rewards-box .rewards-box_num {
+  min-width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background: #EBF4FF;
+  font-size: 18px;
+  color: #002349;
+  font-family: "Peyda-Medium";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.AZ-rewards-box .rewards-box_title {
+  font-size: 14px;
+  color: #002349;
+  font-family: "Peyda-Medium";
+  margin-bottom: 8px;
+}
+.AZ-rewards-box .rewards-box_text {
+  font-size: 12px;
+  color: #808080;
+  font-family: "Peyda-Medium";
+}
+
+.AZ-btn-tbs .tabs {
+  border-radius: 0;
+  background: transparent;
+  padding: 0;
+  gap: 12px;
+}
+.AZ-btn-tbs .tabs li {
+  flex-grow: unset;
+  border: 1px solid #EBF4FF;
+  border-radius: 8px;
+  background: #FFF;
+  padding: 6px 8px;
+  min-width: 106px;
+}
+.AZ-btn-tbs .tabs li:hover .tab-link {
+  color: rgb(245, 130, 34);
+}
+.AZ-btn-tbs .tabs li.active {
+  border: 1px solid rgb(245, 130, 34);
+}
+.AZ-btn-tbs .tabs li.active .tab-link {
+  color: rgb(245, 130, 34);
+}
+
+.AZ-authentication-page .tabs {
+  gap: 0;
+  width: 100%;
+  margin-bottom: 0;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+}
+.AZ-authentication-page .tabs li {
+  flex-grow: 1;
+  padding: 17px 25px;
+  border: 0;
+  border-radius: 0;
+}
+.AZ-authentication-page .tabs li .tab-link {
+  font-size: 16px;
+  font-family: "Peyda-Medium";
+  width: 100%;
+  color: #667D9B;
+  justify-content: unset;
+}
+.AZ-authentication-page .tabs li.active {
+  background: rgba(223, 175, 55, 0.15);
+}
+.AZ-authentication-page .tabs li.active .tab-link {
+  color: rgb(245, 130, 34);
+}
+
+.bank-information {
+  border-radius: 12px;
+  border: 1px solid #E3E1E1;
+  padding: 10px;
+  position: relative;
+}
+.bank-information .card-number {
+  font-size: 16px;
+  color: #808080;
+  font-family: "Peyda-Regular";
+  margin-bottom: 10px;
+}
+.bank-information .bank-name {
+  font-size: 12px;
+  color: #808080;
+  font-family: "Peyda-Regular";
+}
+.bank-information .bank-name img {
+  width: 20px;
+}
+.bank-information .delete-btn {
+  font-size: 16px;
+  color: #EF4D4D;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.chart-label {
+  font-size: 14px;
+  color: #002349;
+  font-family: "Peyda-Regular";
+}
+.chart-label span {
+  color: rgb(245, 130, 34);
+}
+
+#customChart1,
+#customChart2 {
+  width: 100%;
+  height: 200px !important;
+}
+
+.AZ-nav-bottom {
+  border-radius: 20px 20px 0px 0px;
+  background: #FFF;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+}
+.AZ-nav-bottom .nav-link {
+  font-size: 12px;
+  color: #808080;
+  font-family: "Peyda-Regular";
+  padding: 10px 0;
+  position: relative;
+}
+.AZ-nav-bottom .nav-link span {
+  font-size: 20px;
+}
+.AZ-nav-bottom .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  background: rgb(245, 130, 34);
+  width: 0;
+  height: 2px;
+  border-radius: 10px;
+  transition: all 0.2s linear;
+}
+.AZ-nav-bottom .nav-link.active {
+  color: rgb(245, 130, 34);
+}
+.AZ-nav-bottom .nav-link.active::after {
+  width: 30px;
+}
+
+.AZ-product-card {
+  border-radius: 20px;
+  background: #FFF;
+  padding: 12px;
+}
+.AZ-product-card .product-card-img {
+  width: 100%;
+}
+.AZ-product-card .product-card-img::after {
+  padding-bottom: 50%;
+}
+.AZ-product-card .product-card-img img {
+  max-width: 70%;
+  max-height: 70%;
+}
+.AZ-product-card .product-card-title {
+  font-size: 15px;
+  color: #002349;
+  font-family: "Peyda-Medium";
+}
+.AZ-product-card .product-card-details {
+  font-size: 12px;
+  color: #383838;
+  font-family: "Peyda-Medium";
+  width: 50%;
+  padding: 5px 0;
+  justify-content: flex-start;
+}
+.AZ-product-card .product-card-details:nth-child(even) {
+  justify-content: flex-end;
+}
+.AZ-product-card .product-card-details span {
+  color: #8C8C8C;
+}
+.AZ-product-card .product-card-price {
+  font-size: 14px;
+  color: 383838;
+  font-family: "Peyda-Medium";
+}
+.AZ-product-card .product-card-price span {
+  color: rgb(245, 130, 34);
+}
+.AZ-product-card .product-card-btn {
+  font-size: 26px;
+  color: #E0B13D;
+}
+.AZ-product-card .line {
+  width: 100%;
+  height: 1px;
+  margin: 12px 0;
+  background: #E6E6E6;
+}
+
+.message-box {
+  position: relative;
+}
+.message-box .text-wrapper {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-table;
+  border-radius: 20px;
+  background: #FFF;
+}
+.message-box .text-wrapper .chat__text_head {
+  border-bottom: 1px solid #E3E1E1;
+  padding: 15px 20px;
+}
+.message-box .text-wrapper .chat__text_body {
+  padding: 20px;
+}
+.message-box .text-wrapper .chat__text {
+  font-family: "Peyda-Regular";
+  color: #A3A3A3;
+  font-size: 14px;
+}
+.message-box .text-wrapper .chat__link {
+  font-family: "Peyda-Regular";
+  color: #394B89;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.message-box .text-wrapper .chat__link:hover {
+  text-decoration: none;
+}
+.message-box .text-wrapper .chat__text_name {
+  font-size: 16px;
+  color: #808080;
+  font-family: "Peyda-Regular";
+}
+.message-box .text-wrapper .status {
+  font-size: 12px;
+  color: #DBB948;
+  font-family: "Peyda-Regular";
+  border-radius: 8px;
+  background: #EBF4FF;
+  padding: 7px 15px;
+}
+.message-box .text-wrapper .time_masage {
+  font-size: 14px;
+  font-family: "Peyda-Regular";
+  color: #A3A3A3;
+}
+.message-box .chat__conversation-board__message-container.reversed {
+  flex-direction: row-reverse;
+}
+.message-box .chat__conversation-board__message-container.reversed .chat__conversation-board__message__context {
+  align-items: flex-end;
+}
+.message-box .chat__conversation-board__message__context {
+  max-width: 80%;
+  width: 80%;
+}
+.message-box .chat__conversation-board__message-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.message-box .chat__conversation-board__message-container .img__chat {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.message-box .chat__conversation-board__message-container .img__chat img {
+  width: 100%;
+}
+.message-box .chat__conversation-board__message-container:not(:last-child) {
+  margin: 0 0 30px 0;
+}
+.message-box .chat__conversation-panel {
+  background: #F8F8F8;
+  width: 95%;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+}
+.message-box .chat__conversation-panel__inner {
+  flex-grow: 2;
+  border-radius: 4px;
+  background: #26324F;
+}
+.message-box .chat__conversation-panel__inner .chat__conversation-panel__input {
+  flex-grow: 2;
+  position: relative;
+  background: transparent;
+  border: 0;
+  font-size: 12px;
+  font-family: "Peyda-Medium";
+  color: #ffffff;
+  height: 32px;
+  padding: 10px;
+  flex-grow: 1;
+}
+.message-box .send-message-btn {
+  background: transparent;
+  font-size: 24px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8498C4;
+}
+.message-box .send-message-btn:hover {
+  color: #fff;
+}
+.message-box .chat__conversation-panel__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.message-box .file-download {
+  max-width: 300px;
+  background: rgb(245, 130, 34);
+  border-radius: 4px;
+  padding: 8px;
+  margin: 20px 0;
+}
+.message-box .file-download .download-btn {
+  font-size: 10px;
+  font-family: "Peyda-Regular";
+  color: #FFFFFF;
+  padding: 5px 10px;
+  background: #394B89;
+  border-radius: 4px;
+  transition: all 0.2s linear;
+  border: none;
+}
+.message-box .file-download .download-btn:hover {
+  background: #243266;
+}
+.message-box .file-download .file-download-name {
+  font-size: 12px;
+  font-family: "Peyda-Medium";
+  color: #FFFFFF;
+}
+.message-box .file-download .file-download-size {
+  font-size: 10px;
+  font-family: "Peyda-Regular";
+  color: #FFFFFF;
+}
+.message-box .file-download .icon-mdi_file-download {
+  font-size: 40px;
+}
+
+.user-img {
+  min-width: 60px;
+  border-radius: 50%;
+  background: #fff;
+}
+.user-img::after {
+  padding-bottom: 100%;
+}
+
+.AZ-message-page .AZ-section-title span {
+  color: rgb(245, 130, 34);
+}
+.AZ-message-page .send-message {
+  width: 80%;
+  min-width: 80%;
+}
+.AZ-message-page .send-message .bb {
+  border-radius: 20px;
+  background: #FFF;
+}
+.AZ-message-page .send-message_head {
+  padding: 20px;
+}
+.AZ-message-page .send-message_head h4 {
+  font-size: 18px;
+  color: #808080;
+  font-family: "Peyda-Regular";
+}
+.AZ-message-page .send-message_head h4 span {
+  font-size: 24px;
+  color: #DBB948;
+}
+.AZ-message-page .send-message_head span {
+  font-size: 24px;
+  color: #A3A3A3;
+}
+
+.ql-editor {
+  font-family: "Peyda-Regular", Tahoma, sans-serif !important;
+  text-align: right;
+}
+
+.lable {
+  font-size: 14px;
+  color: #808080;
+  font-family: "Peyda-Regular";
+  margin-bottom: 5px;
+}
+
+.custom-file {
+  position: relative;
+  font-family: arial;
+  overflow: hidden;
+  margin-bottom: 10px;
+  width: auto;
+  display: inline-block;
+  width: 100%;
+}
+.custom-file .custom-file-input {
+  display: none;
+}
+.custom-file label {
+  font-size: 14px;
+  font-family: "Peyda-Regular";
+  color: #A3A3A3;
+  cursor: pointer;
+  border-radius: 12px;
+  border: 1px solid #E3E1E1;
+  background: #FFF;
+}
+.custom-file label p,
+.custom-file label span {
+  font-size: 14px;
+  font-family: "Peyda-Regular";
+  color: #A3A3A3;
+  transition: all 0.2s linear;
+  padding: 10px;
+}
+.custom-file label p {
+  border-left: 1px solid #E3E1E1;
+}
+
+.file-list {
+  font-family: arial;
+  list-style: none;
+  padding: 0;
+}
+.file-list .file-item {
+  padding: 5px;
+  font-size: 12px;
+  font-family: "Peyda-Bold";
+  color: #000;
+}
+.file-list .remove-list {
+  font-size: 10px;
+  font-family: "Peyda-Regular";
+  color: red;
+  cursor: pointer;
+  margin-left: 10px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.file-list .icon__file {
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  min-height: 30px;
+  background: #002349;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+
+.AZ-wallet-page .AZ-activity-summary {
+  border-radius: 0;
+  background: transparent;
+  padding: 0;
+}
+.AZ-wallet-page .AZ-activity-summary li {
+  border-bottom: 1px solid #F0F0F0;
+}
+.AZ-wallet-page .AZ-activity-summary li:last-child {
+  border-bottom: 0;
+}
+.AZ-wallet-page .AZ-radio-group input {
+  display: none;
+}
+.AZ-wallet-page .AZ-radio-group input:checked ~ label {
+  background: rgb(245, 130, 34);
+  color: #fff;
+}
+.AZ-wallet-page .AZ-radio-group label {
+  font-size: 12px;
+  color: rgb(245, 130, 34);
+  font-family: "Peyda-Regular";
+  padding: 6px 8px;
+  border-radius: 8px;
+  background: #FFF5DD;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.AZ-wallet-page .inventory-box,
+.AZ-wallet-page .total-box,
+.AZ-wallet-page .gold-inventory-box {
+  border-radius: 15px;
+  background: linear-gradient(90deg, #2D74C0 0%, #003671 100%);
+  padding: 15px;
+  height: 100%;
+}
+.AZ-wallet-page .inventory-box .title,
+.AZ-wallet-page .total-box .title,
+.AZ-wallet-page .gold-inventory-box .title {
+  font-size: 14px;
+  color: #FFFFFF;
+  font-family: "Peyda-Regular";
+}
+.AZ-wallet-page .inventory-box .price,
+.AZ-wallet-page .total-box .price,
+.AZ-wallet-page .gold-inventory-box .price {
+  font-size: 16px;
+  color: #FFFFFF;
+  font-family: "Peyda-Regular";
+}
+.AZ-wallet-page .gold-inventory-box {
+  background: linear-gradient(90deg, #FFCF58 0%, #DDAA2D 100%);
+}
+.AZ-wallet-page .total-box {
+  background: linear-gradient(90deg, #B9B3FF 0%, #9289FF 100%);
+}
+
+.AZ-support-page .recent-requests-list li {
+  padding: 14px 0;
+  border-bottom: 1px solid #E3E1E1;
+}
+.AZ-support-page .recent-requests-list li:last-child {
+  border-bottom: 0;
+}
+.AZ-support-page .recent-requests-list .list-title {
+  font-size: 14px;
+  color: #A3A3A3;
+  font-family: "Peyda-Regular";
+}
+.AZ-support-page .recent-requests-list .list-title span {
+  color: #DBB948;
+}
+.AZ-support-page .recent-requests-list .list-date {
+  font-size: 12px;
+  color: #D4D4D4;
+  font-family: "Peyda-Regular";
+}
+.AZ-support-page .recent-requests-list .list-status {
+  font-size: 12px;
+  color: #A3A3A3;
+  font-family: "Peyda-Regular";
+}
+.AZ-support-page .share-link {
+  padding: 0;
+}
+.AZ-support-page .share-link #link {
+  font-size: 40px;
+  color: rgb(245, 130, 34);
+  font-family: "Peyda-Medium";
+}
+.AZ-support-page .share-link #copy button {
+  font-size: 26px;
+  color: rgb(245, 130, 34);
+}
+
+.wallet-box .line {
+  width: 100%;
+  height: 1px;
+  background: #E3E1E1;
+  margin: 20px 0;
+}
+
+.scrollbar::-webkit-scrollbar {
+  display: none; /* برای کروم و سافاری */
+}
+
+.AZ-sidebar {
+  min-height: 100vh;
+  width: 260px;
+  transition: all 0.2s linear;
+  position: fixed;
+  top: 0;
+  right: 0;
+  border-radius: 30px 0px 0px 30px;
+  background: #004b90;
+  padding: 25px;
+  overflow-y: auto;
+  height: 100vh;
+}
+.AZ-sidebar .navigation {
+  flex-grow: 1;
+}
+.AZ-sidebar .version {
+  font-size: 12px;
+  color: #DDDDDD;
+  font-family: "Peyda-Medium";
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+.AZ-sidebar .close-sidebar {
+  font-size: 20px;
+}
+.AZ-sidebar .line {
+  background: #ffffff;
+  margin: 0;
+}
+.AZ-sidebar .items {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.AZ-sidebar .items .item a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+  position: relative;
+  padding: 8px 12px;
+  position: relative;
+  border-radius: 3px;
+  display: inline-block;
+  transition: all 0.2s linear;
+  width: 100%;
+  white-space: nowrap;
+  border-radius: 10px;
+}
+.AZ-sidebar .items .item a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 0;
+  width: 2px;
+  border-radius: 10px;
+  background: #fff;
+  transition: all 0.2s linear;
+}
+.AZ-sidebar .items .item a span {
+  font-size: 18px;
+  color: #fff;
+  transition: all 0.2s linear;
+}
+.AZ-sidebar .items .item a .item-text {
+  font-size: 14px;
+  color: #E5E5E5;
+  font-family: "Peyda-Regular";
+}
+.AZ-sidebar .items .item a.active, .AZ-sidebar .items .item a:hover {
+  background: rgba(90, 124, 202, 0.3);
+  color: rgb(245, 130, 34);
+}
+.AZ-sidebar .items .item a.active span, .AZ-sidebar .items .item a:hover span {
+  color: rgb(245, 130, 34);
+}
+.AZ-sidebar .items .item a.active::after {
+  height: 20px;
+}
+.AZ-sidebar .logout-link {
+  font-size: 14px;
+  color: #EF4D4D;
+  font-family: "Peyda-Regular";
+  padding: 8px 12px;
+  white-space: nowrap;
+}
+.AZ-sidebar .logout-link span {
+  font-size: 18px;
+  color: #EF4D4D !important;
+}
+.AZ-sidebar .logout-link .item-text {
+  color: #EF4D4D !important;
+}
+.AZ-sidebar .logout-link:hover {
+  color: #EF4D4D;
+  background: transparent;
+}
+.AZ-sidebar .logout-link:hover span {
+  color: #EF4D4D;
+}
+
+.minimize-btn {
+  font-size: 25px;
+  color: #000;
+  display: block;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.minimize-btn input {
+  display: none;
+}
+.minimize-btn:hover {
+  color: #000;
+}
+
+.main:has(#minimize:checked) .sidebar-logo {
+  max-width: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+}
+.main:has(#minimize:checked) .sidebar-favicon {
+  max-width: 20rem;
+  overflow: hidden;
+  opacity: 1;
+  visibility: visible;
+}
+.main:has(#minimize:checked) .AZ-sidebar {
+  width: 90px;
+}
+.main:has(#minimize:checked) .pr-260 {
+  padding-right: 90px;
+}
+.main:has(#minimize:checked) .version {
+  font-size: 10px;
+}
+.main:has(#minimize:checked) .items .item a .item-text {
+  max-width: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sidebar-header {
+  height: 100px;
+}
+
+.sidebar-favicon,
+.sidebar-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sidebar-logo {
+  max-width: 20rem;
+  transition: all 0.4s;
+}
+
+.sidebar-favicon {
+  max-width: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.AZ-login-page {
+  /* min-height: 100vh; */
+  overflow-x: hidden;
+}
+.AZ-login-page .login-right,
+.AZ-login-page .login-left {
+  min-height: 100vh;
+  padding: 30px 100px 30px 0;
+  background: #004B90;
+}
+.AZ-login-page .login-left {
+  padding: 30px 0 30px 30px;
+  background: #f5f5f5;
+  background-image: url("../img/login.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -200px center;
+  background-blend-mode: soft-light;
+}
+.AZ-login-page .login-box_right,
+.AZ-login-page .login-box_left {
+  background: #FFFFFF;
+  padding: 30px;
+  min-height: 500px;
+  border-radius: 0 20px 20px 0;
+  border-left: 1px dashed gray;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.AZ-login-page .login-box_left {
+  border-radius: 20px 0 0 20px;
+  width: 70%;
+  border-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0;
+}
+.AZ-login-page .logo {
+  width: 200px;
+}
+.AZ-login-page .login-title {
+  font-size: 16px;
+  color: #004B90;
+  
+  margin: 20px 0;
+  line-height: 29px;
+  font-weight: 600;
+}
+.AZ-login-page .login-text {
+  font-size: 16px;
+  color: #3f3f3f;
+  font-family: "Peyda-Regular";
+}
+.AZ-login-page .login-footer {
+  border-top: 1px dashed rgb(230, 230, 230);
+  padding: 20px 100px;
+}
+.AZ-login-page .login-box_left_body {
+  padding: 25px 50px;
+}
+.AZ-login-page .change-number {
+  font-size: 15px;
+  color: #004B90;
+  font-family: "Peyda-Regular";
+  text-decoration: underline;
+  transition: all 0.2s linear;
+}
+.AZ-login-page .change-number:hover {
+  color: #de700f;
+}
+.AZ-login-page .get-code-again {
+  font-size: 14px;
+  color: #353535;
+  font-family: "Peyda-Medium";
+}
+.AZ-login-page .get-code-again span {
+  color: #004B90;
+}
+.AZ-login-page .number-code {
+  direction: ltr;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.AZ-login-page .code-input {
+  font-size: 16px;
+  color: #004B90;
+  font-family: "Peyda-Bold";
+  border-radius: 8px;
+  border: 1px solid rgba(100, 63, 174, 0.16);
+  text-align: center;
+  height: 50px;
+  outline: none;
+  direction: ltr;
+  width: 45px;
+  height: 45px;
+  padding: 0;
+}
+.AZ-login-page .code-input.active {
+  border: 1px solid #F58220;
+}
+.AZ-login-page .product-list li {
+  padding: 8px 0;
+  border-bottom: 1px dashed rgb(217, 214, 214);
+}
+.AZ-login-page .product-list_title {
+  font-size: 16px;
+  color: #004B90;
+  font-family: "Peyda-Medium";
+  width: 50%;
+}
+.AZ-login-page .product-list_text {
+  font-size: 16px;
+  color: #000000;
+  font-family: "Peyda-Medium";
+}
+.AZ-login-page .login-page-link {
+  font-size: 14px;
+  color: #003671;
+}
+
+.AZ-accordion .AZ-checkbox-group {
+  margin-bottom: 0;
+}
+.AZ-accordion .accordion-item {
+  width: 100%;
+  border: none;
+  overflow: hidden;
+  padding: 10px 0;
+  border-bottom: 1px solid #D4D4D4;
+  border-radius: 0;
+  background: transparent;
+}
+.AZ-accordion .accordion-item:last-child {
+  border-bottom: 0;
+}
+.AZ-accordion .accordion-item.open .close-accordion {
+  display: flex;
+}
+.AZ-accordion .accordion-item.open .open-accordion {
+  display: none;
+}
+.AZ-accordion .accordion-content {
+  padding: 20px 20px;
+}
+.AZ-accordion .accordion-item__button {
+  font-size: 16px;
+  font-family: "Peyda-Medium";
+  color: #343434;
+  border: none;
+  width: 100%;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background: transparent;
+  text-align: right;
+  padding: 0;
+}
+.AZ-accordion .accordion-item__button .close-accordion,
+.AZ-accordion .accordion-item__button .open-accordion {
+  display: none;
+  font-size: 20px;
+  color: #000000;
+}
+.AZ-accordion .accordion-item__button .open-accordion {
+  display: flex;
+}
+
+@media screen and (max-width: 991px) {
+  .w-md-100 {
+    width: 100%;
+  }
+  .AZ-sidebar {
+    right: -300px;
+    padding: 20px 25px;
+    z-index: 100;
+    width: 260px;
+  }
+  .separator-wrapper span {
+    color: #fff;
+  }
+  .pr-260 {
+    padding-right: 0;
+  }
+  .main {
+    position: relative;
+  }
+  .main .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 100;
+  }
+  .sidebar-header {
+    height: 60px;
+  }
+  .sidebar-logo {
+    width: 100px;
+  }
+  .main:has(#minimize:checked) .overlay {
+    display: block;
+  }
+  .main:has(#minimize:checked) .sidebar-logo {
+    max-width: unset;
+    opacity: unset;
+    visibility: unset;
+  }
+  .main:has(#minimize:checked) .sidebar-favicon {
+    display: none;
+  }
+  .main:has(#minimize:checked) .AZ-sidebar {
+    width: 260px;
+    right: 0;
+  }
+  .main:has(#minimize:checked) .pr-260 {
+    padding-right: unset;
+  }
+  .main:has(#minimize:checked) .username {
+    font-size: 12px;
+  }
+  .main:has(#minimize:checked) .items .item a .item-text {
+    max-width: unset;
+    overflow: unset;
+    opacity: unset;
+    visibility: unset;
+  }
+  .AZ-login-page .login-box_right,
+  .AZ-login-page .login-box_left {
+    height: auto;
+    border-radius: 20px 20px 0 0;
+    border-left: 0;
+    border-bottom: 1px dashed gray;
+    width: 100%;
+    min-height: unset;
+  }
+  .AZ-login-page .login-box_right {
+    padding: 30px 20px;
+  }
+  .AZ-login-page .login-box_left {
+    border-radius: 0 0 20px 20px;
+    border-bottom: 0;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+  }
+  .AZ-login-page .login-right {
+    height: -moz-min-content;
+    height: min-content;
+    min-height: unset;
+    padding: 50px 50px 0 50px;
+  }
+  .AZ-login-page .login-left {
+    padding: 0 50px 50px 50px;
+    background-position: -300px center;
+    min-height: auto;
+  }
+  .AZ-login-page .login-footer {
+    padding: 20px 50px;
+  }
+  .AZ-login-page .login-box_left_body {
+    padding: 30px 20px;
+  }
+  .AZ-login-page .login-title {
+    font-size: 14px;
+    margin: 10px 0;
+    
+  }
+  .AZ-header-page {
+    border-radius: 0px 0px 15px 15px;
+    background: #004b90;
+    box-shadow: 0px 8px 12px 0px rgba(216, 216, 216, 0.1);
+    z-index: 10;
+  }
+  .AZ-header-page .sidebar-hamberger {
+    color: #fff;
+  }
+  .AZ-header-page .sidebar-hamberger:hover {
+    color: #fff;
+  }
+  .AZ-header-page .nav-brand {
+    width: 80px;
+  }
+  .AZ-header-page .notification {
+    color: #fff;
+  }
+  .AZ-header-page .badge1 {
+    background: #DFAF37;
+  }
+  .box-table {
+    border-radius: 0;
+    background: transparent;
+    padding: 0;
+  }
+  .table-wrapper {
+    overflow-x: hidden;
+  }
+  .table {
+    display: block;
+    width: 100%;
+  }
+  .table thead {
+    display: none;
+  }
+  .table tbody,
+  .table tr,
+  .table td {
+    display: block;
+    width: 100%;
+  }
+  .table tbody tr {
+    margin-bottom: 15px;
+    border-bottom: 0;
+    background: #fff;
+    padding: 15px;
+    border-radius: 20px;
+  }
+  .table tbody td {
+    padding-right: 50%;
+    text-align: left;
+    position: relative;
+    padding: 5px 50% 5px 10px;
+  }
+  .table tbody td div, .table tbody td p, .table tbody td span {
+    justify-content: flex-end;
+    font-size: 12px;
+  }
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    right: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 12px;
+    color: #808080;
+    font-family: "Peyda-Regular";
+    text-align: right;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal-wrapper .modal-title {
+    font-size: 18px;
+  }
+  .modal-wrapper .modal-content {
+    padding: 20px;
+  }
+  .danger-message p {
+    font-size: 12px;
+    color: rgb(110, 0, 0);
+    font-family: "Peyda-Regular";
+  }
+}
+@media screen and (max-width: 480px) {
+  .w-sm-100 {
+    width: 100%;
+  }
+  .AZ-header-page .sidebar-hamberger {
+    font-size: 20px;
+  }
+  .AZ-primary-btn,
+  .AZ-secondary-btn {
+    font-size: 12px;
+    height: 35px;
+  }
+  .AZ-section-text {
+    font-size: 10px;
+  }
+  .AZ-section-title {
+    font-size: 14px;
+  }
+  .AZ-pagination .page-link {
+    font-size: 12px;
+    width: 25px;
+    height: 25px;
+  }
+  .user-img {
+    min-width: 40px;
+  }
+  .AZ-login-page .login-left {
+    padding: 0 20px 20px 20px;
+    background-position: -300px center;
+  }
+  .AZ-login-page .login-right {
+    height: auto;
+    padding: 50px 20px 0 20px;
+  }
+  .AZ-login-page .logo {
+    width: 150px;
+  }
+  .AZ-login-page .login-text {
+    font-size: 14px;
+  }
+  .AZ-login-page .product-list_text {
+    font-size: 14px;
+  }
+  .AZ-login-page .product-list_title {
+    font-size: 12px;
+  }
+}

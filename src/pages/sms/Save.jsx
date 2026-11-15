@@ -1,0 +1,69 @@
+import { Button, Col, Form, Input, Row } from "antd";
+import React, { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useAuthContext } from "../../components/AuthProvider";
+import { getParams, request, rules } from "../../module/util";
+const { Item, useForm } = Form;
+export default function SaveSms() {
+  const { setTitle, logout } = useAuthContext();
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const [form] = useForm();
+
+  const [model, setModel] = useState({});
+  const handleSubmit = async (values) => {
+    try {
+      let create = location.pathname === "/sms/create";
+      let method = create ? "POST" : "PUT";
+      const id = await getParams(location.search, "id");
+      let url = create ? "/sms" : `/sms/${id}`;
+      if (!create) values["id"] = id;
+      let res = await request(url, method, values);
+
+      if (res["success"]) {
+        if (res["data"]) window.location.href = res["data"];
+        else navigate(`/sms`);
+      }
+    } catch (error) {}
+  };
+
+  useEffect(() => {
+    getData();
+  }, [location]);
+  const getData = async () => {
+    const id = await getParams(location.search, "id");
+    if (id) {
+      let data = await request(`/sms/${id}`, "GET");
+      if (data["success"]) {
+        let _data = data["data"];
+        form.setFieldsValue(_data);
+        setTitle(` : ${_data["id"]}`);
+        setModel(data["data"]);
+      }
+    }
+  };
+  return (
+    <div className="pa-3">
+      <Form form={form} onFinish={handleSubmit} layout="vertical">
+        <Row>
+          <Col className="pr-2" md={8} sm={24} xs={24} lg={8}>
+            <Item label="تعداد" name="count" rules={rules("تعداد")}>
+              <Input type="text" placeholder="تعداد" />
+            </Item>
+          </Col>
+        </Row>
+        <Form.Item className="text-center">
+          <Button
+            type="primary"
+            htmlType="submit"
+            size="large"
+            style={{ width: "25%" }}
+          >
+            ذخیره
+          </Button>
+        </Form.Item>
+      </Form>
+    </div>
+  );
+}

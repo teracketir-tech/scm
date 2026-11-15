@@ -1,0 +1,326 @@
+/* =========================================
+   Style Important (Highest Priority)
+   این فایل آخرین فایل CSS است که لود می‌شود.
+   ========================================= */
+
+/* ===== تنظیمات پایه ===== */
+.font-bold { font-weight: 500 !important; }
+li a .text-sm { font-weight: 500 !important; }
+[aria-label="caret-down"] { display: none; }
+.ant-pagination .ant-pagination-item a { font-family: "VazirFarsi" !important; }
+tbody tr td.ant-table-cell { font-weight: 300 !important; }
+
+
+/* ===== جدول (Table) ===== */
+.ant-table-wrapper .ant-table { background: #ffffff !important; border-radius: 1rem !important; }
+.dark .ant-table-wrapper .ant-table { background: #111827 !important; }
+.ant-table-wrapper .ant-table-placeholder { background: #ffffff !important; }
+.dark .ant-table-wrapper .ant-table-placeholder { background: #111827 !important; }
+.ant-table-wrapper .ant-table-placeholder .ant-empty-description { color: #98a2b3 !important; }
+
+/* هدر */
+.ant-table-thead > tr > th {
+  background: #f9fafb !important;
+  color: #475467 !important;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  padding: 16px 24px !important;
+  border-bottom: 1px solid #eaecf0 !important;
+  white-space: nowrap !important;
+}
+.dark .ant-table-thead > tr > th {
+  background: #1d2939 !important;
+  color: #98a2b3 !important;
+  border-bottom-color: #344054 !important;
+}
+.ant-table-thead > tr > th::before { display: none !important; }
+
+/* بدنه */
+.ant-table-tbody > tr > td {
+  padding: 16px 24px !important;
+  border-bottom: 1px solid #eaecf0 !important;
+  color: #475467 !important;
+  font-size: 14px !important;
+  transition: background-color 0.2s;
+}
+.dark .ant-table-tbody > tr > td {
+  border-bottom-color: #344054 !important;
+  color: #d0d5dd !important;
+}
+.ant-table-tbody > tr:hover > td { background-color: #f9fafb !important; }
+.dark .ant-table-tbody > tr:hover > td { background-color: #1d2939 !important; }
+.ant-table-tbody > tr.ant-table-row-selected > td { background-color: #ecf3ff !important; color: #465fff !important; }
+.dark .ant-table-tbody > tr.ant-table-row-selected > td { background-color: rgba(70, 95, 255, 0.15) !important; color: #c2d6ff !important; }
+
+@media (max-width: 768px) {
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td { padding: 12px 16px !important; font-size: 12px !important; }
+}
+
+
+/* ===== دکمه‌های عملیات جدول ===== */
+.ant-table-tbody .action-buttons { display: flex; align-items: center; gap: 8px; }
+.ant-table-tbody .action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 16px;
+}
+.ant-table-tbody .action-btn .anticon { display: flex; align-items: center; justify-content: center; }
+.ant-table-tbody .action-btn.edit { color: #465fff; background: #ecf3ff; }
+.ant-table-tbody .action-btn.edit:hover { background: #dde9ff; }
+.dark .ant-table-tbody .action-btn.edit { color: #c2d6ff; background: rgba(70, 95, 255, 0.15); }
+.dark .ant-table-tbody .action-btn.edit:hover { background: rgba(70, 95, 255, 0.25); }
+.ant-table-tbody .action-btn.view { color: #12b76a; background: #ecfdf3; }
+.ant-table-tbody .action-btn.view:hover { background: #d1fadf; }
+.dark .ant-table-tbody .action-btn.view { color: #6ce9a6; background: rgba(18, 183, 106, 0.15); }
+.dark .ant-table-tbody .action-btn.view:hover { background: rgba(18, 183, 106, 0.25); }
+.ant-table-tbody .action-btn.delete { color: #f04438; background: #fef3f2; }
+.ant-table-tbody .action-btn.delete:hover { background: #fee4e2; }
+.dark .ant-table-tbody .action-btn.delete { color: #fda29b; background: rgba(240, 68, 56, 0.15); }
+.dark .ant-table-tbody .action-btn.delete:hover { background: rgba(240, 68, 56, 0.25); }
+.ant-table-tbody .action-btn.logs { color: #f79009; background: #fffaeb; }
+.ant-table-tbody .action-btn.logs:hover { background: #fef0c7; }
+.dark .ant-table-tbody .action-btn.logs { color: #fec84b; background: rgba(247, 144, 9, 0.15); }
+.dark .ant-table-tbody .action-btn.logs:hover { background: rgba(247, 144, 9, 0.25); }
+
+
+/* ===== فرم‌ها (Floating Label) ===== */
+.floating-field { position: relative; width: 100%; }
+
+/* اینپوت پایه */
+.floating-input {
+  height: 52px !important;
+  border-radius: 0.5rem !important;
+  border: 1px solid #d0d5dd !important;
+  background-color: #ffffff !important;
+  padding-top: 18px !important;
+  padding-bottom: 4px !important;
+  padding-right: 12px !important;
+  transition: all 0.2s !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* سلکت پایه */
+.floating-select .ant-select-selector {
+  height: 52px !important;
+  border-radius: 0.5rem !important;
+  border: 1px solid #d0d5dd !important;
+  background-color: #ffffff !important;
+  padding-top: 16px !important;
+  padding-bottom: 4px !important;
+  padding-right: 12px !important;
+  transition: all 0.2s !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.dark .floating-input,
+.dark .floating-select .ant-select-selector {
+  background-color: #1d2939 !important;
+  border-color: #344054 !important;
+  color: #f2f4f7 !important;
+}
+
+/* لیبل */
+.floating-label {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #98a2b3;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  background-color: transparent;
+  padding: 0 4px;
+}
+
+/* لیبل فعال (بالا رفته) */
+.floating-field.focused .floating-label,
+.floating-field.has-value .floating-label {
+  top: 0;
+  transform: translateY(-50%) scale(0.85);
+  color: #444444;
+  background-color: #ffffff;
+  font-weight: 600;
+}
+.dark .floating-field.focused .floating-label,
+.dark .floating-field.has-value .floating-label {
+  color: #c2d6ff;
+  background-color: #111827;
+}
+
+/* ===== حذف کامل فوکوس و outline ===== */
+.floating-field input,
+.floating-field textarea,
+.floating-field .ant-select-selector,
+.floating-field .ant-select-selection-search-input,
+.floating-field .ant-input-affix-wrapper,
+.floating-field *:focus,
+.floating-field *:focus-visible,
+.floating-field *:focus-within,
+.ant-input:focus,
+.ant-input-focused,
+.ant-input-affix-wrapper:focus,
+.ant-input-affix-wrapper-focused,
+.ant-select-focused .ant-select-selector {
+  outline: none !important;
+  outline-offset: 0 !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+/* حاشیه ثابت در لایت */
+.floating-field input:focus,
+.floating-field .ant-select-selector,
+.floating-field .ant-input-affix-wrapper:focus,
+.floating-field .ant-input-affix-wrapper-focused,
+.ant-select-focused .ant-select-selector {
+  border-color: #d0d5dd !important;
+}
+
+/* حاشیه ثابت در دارک */
+.dark .floating-field input:focus,
+.dark .floating-field .ant-select-selector,
+.dark .floating-field .ant-input-affix-wrapper:focus,
+.dark .floating-field .ant-input-affix-wrapper-focused,
+.dark .ant-select-focused .ant-select-selector {
+  border-color: #344054 !important;
+}
+
+/* ارتفاع متن داخل سلکت */
+.floating-select .ant-select-selection-item,
+.floating-select .ant-select-selection-placeholder {
+  line-height: 30px !important;
+}
+
+
+/* ===== فرم‌های عمومی (غیر Floating) ===== */
+.ant-input:not(.floating-input),
+.ant-input-affix-wrapper,
+.ant-picker,
+.ant-input-number {
+  border-radius: 0.5rem !important;
+  border: 1px solid #d0d5dd !important;
+  background-color: #ffffff !important;
+  color: #101828 !important;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05) !important;
+}
+.dark .ant-input:not(.floating-input),
+.dark .ant-input-affix-wrapper,
+.dark .ant-picker,
+.dark .ant-input-number {
+  background-color: #1d2939 !important;
+  border-color: #344054 !important;
+  color: #f2f4f7 !important;
+}
+
+/* لیبل فرم‌های عمومی */
+.ant-form-item-label > label {
+  font-weight: 600 !important;
+  color: #344054 !important;
+  font-size: 13px !important;
+  margin-bottom: 4px !important;
+}
+.dark .ant-form-item-label > label { color: #d0d5dd !important; }
+.ant-form-item { margin-bottom: 20px !important; }
+
+/* حالت دارک سلکت‌ها */
+.dark .ant-select-dropdown {
+  background-color: #1d2939 !important;
+  border: 1px solid #344054 !important;
+}
+.dark .ant-select-item { color: #d0d5dd !important; }
+.dark .ant-select-item-option-active { background-color: #344054 !important; }
+.dark .ant-select-item-option-selected {
+  background-color: rgba(70, 95, 255, 0.2) !important;
+  color: #c2d6ff !important;
+}
+.dark .ant-input-password-icon { color: #98a2b3 !important; }
+
+/* پلیس‌هولدر */
+.ant-input::placeholder,
+.ant-select-selection-placeholder { color: #98a2b3 !important; }
+
+/* خطا */
+.ant-form-item-explain-error { font-size: 12px !important; margin-top: 4px !important; text-align: right !important; }
+.ant-input-status-error,
+.ant-select-status-error .ant-select-selector { border-color: #f04438 !important; }
+
+/* آپلود */
+.ant-upload-wrapper .ant-upload-select { width: 100% !important; }
+.ant-upload-wrapper .ant-upload-select .ant-btn {
+  width: 100% !important;
+  height: 40px !important;
+  border-radius: 0.5rem !important;
+  background: #f9fafb !important;
+  border: 1px dashed #d0d5dd !important;
+  color: #475467 !important;
+}
+.dark .ant-upload-wrapper .ant-upload-select .ant-btn {
+  background: #1d2939 !important;
+  border-color: #344054 !important;
+  color: #d0d5dd !important;
+}
+
+/* دکمه اصلی */
+.ant-btn-primary {
+  background-color: #465fff !important;
+  border-color: #465fff !important;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05) !important;
+}
+.ant-btn-primary:hover {
+  background-color: #3641f5 !important;
+  border-color: #3641f5 !important;
+}
+
+
+.floating-field .required{
+    font-size: 12px !important;
+    font-weight: 100;
+}/* ===== Detail Card (برای صفحات View و Modal) ===== */
+.modern-form-card {
+  background-color: #ffffff !important;
+  border: 1px solid #f2f4f7 !important;
+  box-shadow: 0 4px 6px -1px rgba(16, 24, 40, 0.05), 0 2px 4px -2px rgba(16, 24, 40, 0.05) !important;
+  border-radius: 1rem !important;
+  overflow: hidden;
+}
+
+.dark .modern-form-card {
+  background-color: #111827 !important; /* gray-900 */
+  border-color: #1f2937 !important; /* gray-800 */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* هدر DetailCard */
+.modern-form-card > div:first-child {
+  background-color: #f9fafb !important; /* gray-50 */
+  border-bottom: 1px solid #f2f4f7 !important;
+}
+.dark .modern-form-card > div:first-child {
+  background-color: #1d2939 !important; /* gray-800 */
+  border-bottom-color: #1f2937 !important;
+}
+
+/* فیلدهای DetailCard */
+.modern-form-card .flex.items-center.justify-between {
+  border-bottom: 1px solid #f9fafb !important;
+}
+.dark .modern-form-card .flex.items-center.justify-between {
+  border-bottom-color: #1f2937 !important;
+}
+
+/* آخرین فیلد بدون حاشیه */
+.modern-form-card .flex.items-center.justify-between:last-child {
+  border-bottom: none !important;
+}
