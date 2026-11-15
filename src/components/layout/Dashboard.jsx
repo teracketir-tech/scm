@@ -13,7 +13,7 @@ export const Dashboard = ({ subname, breadcrumb, children }) => {
       </Helmet>
       <Card
         bordered={false}
-        className="modern-card tablespace mb-6"
+        className="modern-card tablespace mb-6 page-ui-modern"
         title={
           <div className=" justify-between gap-2 py-2">
             <span className="text-lg font-bold text-gray-900 dark:text-white">
