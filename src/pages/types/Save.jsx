@@ -46,13 +46,7 @@ export default function SaveTypes() {
   return (
     <div className="pa-3">
       <Form form={form} onFinish={handleSubmit} layout="vertical">
-        <Row>
-          <Col className="pr-2" md={8} sm={24} xs={24} lg={8}>
-            <Item label="نام" name="name" rules={rules("نام")}>
-              <Input type="text" placeholder="نام" />
-            </Item>
-          </Col>
-        </Row>
+        <div className="modern-form-card rounded-2xl p-6 mb-6"><div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"><FloatingInput label="نام" name="name" rules={rules("نام")} /></div></div>
         <Form.Item className="text-left">
           <Button
             type="primary"
