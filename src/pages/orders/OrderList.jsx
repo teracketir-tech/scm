@@ -1,4 +1,5 @@
-import { Button, Divider, Table, Tag, message, Modal, Card, Badge, Space, Row, Col, Select, Switch } from "antd";
+import { Button, Divider,  Tag, message, Modal, Card, Badge, Space, Row, Col, Select, Switch } from "antd";
+import { DataTable } from "../../components/DataTable";
 import { useEffect, useState } from "react";
 import { 
   DollarOutlined, 
