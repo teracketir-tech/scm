@@ -1,4 +1,5 @@
-import { Button, Form, Input } from "antd";
+import { Button, Form} from "antd";
+import { FloatingInput } from "../components/FloatingInput";
 import localforage from "localforage";
 import React, { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -32,9 +33,7 @@ export default function Profile() {
     <Form form={form} onFinish={onFinish} layout="vertical">
       <div className="row p-4">
         <div className="col-md-4">
-          <Item label="نام" name="first_name" rules={rules("نام")}>
-            <Input type="text" placeholder="نام" />
-          </Item>
+          <FloatingInput label="نام" name="first_name" rules={rules("نام")} type="text" />
         </div>
         <div className="col-md-4">
           <Item
