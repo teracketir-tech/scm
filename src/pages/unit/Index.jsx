@@ -1,4 +1,5 @@
-import { Button, Divider, Form, Input, Modal, Table, Tooltip } from "antd";
+import {Button, Divider, Form, Input, Modal, Tooltip} from "antd";
+import { DataTable } from "../../components/DataTable";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useAuthContext } from "../../components/AuthProvider";
@@ -133,7 +134,7 @@ export default function Units() {
       )}
 
       <div className="table-responsive">
-        <Table columns={columns} dataSource={data} pagination={false} className="ant-border-space" />
+        <DataTable columns={columns} dataSource={data} pagination={false} />
       </div>
 
       <Pagination all={pages} />
