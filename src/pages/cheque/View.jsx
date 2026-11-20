@@ -1,18 +1,13 @@
-import { Button, Col, Form, Input, Row, Select } from "antd";
+import { Button, Row } from "antd";
 import React, { useEffect, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useAuthContext } from "../../components/AuthProvider";
-import { checkAccess, confirm, getParams, numberFormat, request, rules } from "../../module/util";
-import AntdSelect from "../../components/AntdSelect";
-import { DeleteOutlined, PlusCircleOutlined } from "@ant-design/icons";
-import Datepicker from "../../components/DatePicker";
-import { NumberFormat } from "../../components/NumberFormat";
+import { checkAccess, confirm, getParams, numberFormat, request } from "../../module/util";
+import { DetailCard } from "../../components/DetailCard";
 
-const { Item, useForm } = Form;
 
 export default function ViewCheque() {
   const { auth } = useAuthContext();
-  const [form] = useForm();
   const location = useLocation();
   const [model, setModel] = useState({});
   const [banks, setBanks] = useState([]);
@@ -54,8 +49,15 @@ export default function ViewCheque() {
 
   return (
     <div className="pa-3 px-4" style={{ minHeight: "80vh" }}>
-      <Row className="d-flex flex-column align-items-start mt-5">
-        <Row className="d-flex justify-content-start gap-2 w-100 mb-4" style={{ borderBottom: "1px solid lightGray" }}>
+      <DetailCard title="اطلاعات چک" fields={[
+        { label: "نام تامین کننده", value: `${model?.supplier?.first_name || ""} ${model?.supplier?.last_name || ""}` },
+        { label: "کد تامین کننده", value: model?.supplier?.supplier_code },
+        { label: "تاریخ", value: model.date },
+        { label: "مبلغ کل", value: numberFormat(model.total_price) },
+        { label: "وضعیت", value: statusList[model.status] },
+      ]} />
+
+      <Row className="d-flex justify-content-start gap-2 w-100 mb-4" style={{ borderBottom: "1px solid lightGray" }}>
           <p className="font-bold">نام تامین کننده</p>
           <p>:</p>
           <p>
