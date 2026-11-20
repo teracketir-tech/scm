@@ -1,4 +1,5 @@
-import { Button, Divider, Table, Tag, message, Modal, Descriptions, Timeline, Tabs, Card, Badge, Space, Tooltip,Row,Col } from "antd";
+import { Button, Divider,  Tag, message, Modal, Descriptions, Timeline, Tabs, Card, Badge, Space, Tooltip,Row,Col } from "antd";
+import { DataTable } from "../../components/DataTable";
 import { useEffect, useState } from "react";
 import { 
   PlusOutlined, 
