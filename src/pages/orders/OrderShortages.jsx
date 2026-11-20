@@ -1,4 +1,5 @@
-import { Button, Divider, Table, Tag, message, Modal, Card, Badge, Space, Row, Col, Select, Input } from "antd";
+import { Button, Divider,  Tag, message, Modal, Card, Badge, Space, Row, Col, Select, Input } from "antd";
+import { DataTable } from "../../components/DataTable";
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import {
