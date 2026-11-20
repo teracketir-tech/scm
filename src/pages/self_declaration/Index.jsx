@@ -1,4 +1,5 @@
-import { Button, Divider, Dropdown, Menu, Table } from "antd";
+import { Button, Divider, Dropdown, Menu} from "antd";
+import { DataTable } from "../../components/DataTable";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useAuthContext } from "../../components/AuthProvider";
