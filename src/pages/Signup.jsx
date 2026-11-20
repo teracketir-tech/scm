@@ -1,4 +1,5 @@
-import { Button, Card, Col, Form, Input, Layout, Row, Typography } from "antd";
+import { Button, Card, Col, Form,  Layout, Row, Typography } from "antd";
+import { FloatingInput } from "../components/FloatingInput";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/img/logo.png";
@@ -42,25 +43,17 @@ export default function Signup() {
               <Form onFinish={onFinish} layout="vertical" className="row-col" autoComplete="off" form={form}>
                 <Row>
                   <Col xs={24} md={12} className="px-2">
-                    <Item label="نام" name="first_name" rules={rules("نام")}>
-                      <Input />
-                    </Item>
+                    <FloatingInput label="نام" name="first_name" rules={rules("نام")} />
                   </Col>
                   <Col xs={24} md={12} className="px-2">
-                    <Item label="نام خانوادگی" name="last_name" rules={rules("نام خانوادگی")}>
-                      <Input />
-                    </Item>
+                    <FloatingInput label="نام خانوادگی" name="last_name" rules={rules("نام خانوادگی")} />
                   </Col>
                   <Col xs={24} md={12} className="px-2">
-                    <Item label="نام کاربری (شماره تماس)" name="username" rules={rules("نام کاربری")}>
-                      <Input />
-                    </Item>
+                    <FloatingInput label="نام کاربری (شماره تماس)" name="username" rules={rules("نام کاربری")} />
                   </Col>
 
                   <Col xs={24} md={12} className="px-2">
-                    <Item label="کلمه عبور" name="password" rules={rules("کلمه عبور")}>
-                      <Input type="password" />
-                    </Item>
+                    <FloatingInput label="کلمه عبور" name="password" rules={rules("کلمه عبور")} type="password" />
                   </Col>
                   <Col xs={24} md={12} className="px-2">
                     <Item
@@ -77,9 +70,7 @@ export default function Signup() {
                     </Item>
                   </Col>
                   <Col xs={24} md={12} className="px-2">
-                    <Item label="نام شرکت" name="company_name" rules={rules("نام شرکت")}>
-                      <Input />
-                    </Item>
+                    <FloatingInput label="نام شرکت" name="company_name" rules={rules("نام شرکت")} />
                   </Col>
                   <Col xs={24} md={12} className="px-2">
                     <Item label="کد اقتصادی" name="economic_code">
