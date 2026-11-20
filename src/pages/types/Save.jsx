@@ -1,9 +1,10 @@
-import { Button, Col, Form, Input, Row } from "antd";
+import { Button, Form } from "antd";
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../components/AuthProvider";
 import { getParams, request, rules } from "../../module/util";
-const { Item, useForm } = Form;
+import { FloatingInput } from "../../components/FloatingInput";
+const { useForm } = Form;
 export default function SaveTypes() {
   const { setTitle, logout } = useAuthContext();
   const location = useLocation();
@@ -52,12 +53,12 @@ export default function SaveTypes() {
             </Item>
           </Col>
         </Row>
-        <Form.Item className="text-center">
+        <Form.Item className="text-left">
           <Button
             type="primary"
             htmlType="submit"
             size="large"
-            style={{ width: "25%" }}
+            className="!px-12 !rounded-xl"
           >
             ذخیره
           </Button>
